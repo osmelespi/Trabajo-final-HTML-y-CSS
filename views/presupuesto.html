@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Osmel's Cakes</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img class="membrete" src="../assets/images/membrete.png" alt="membrete">
+        <nav>
+            <a href="index.html">
+                <img src="../assets/images/logo1.png" alt="logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="/index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="../views/productos.html">tienda</a>
+                </li>
+                <li>
+                    <a class="enlaceactivo" href="#">presupuesto</a>
+                </li>
+                <li>
+                    <a href="../views/contacto.html">contacto</a>
+                </li>
+            </ul>
+            <div class="buscador">
+                <input type="text">
+                <button class="boton">Buscar</button>
+            </div>
+        </nav>
+    </header>
+    <main class="caja">
+        <h1 class="animateizquierda">Solicite Presupuesto</h1>
+        <div class="container">
+            <form id="myform" name="myform" action="#" method="get" target="_self">
+                <ul class="flex-form">
+                    <li>
+                        <label for="first-name">Nombre</label>
+                        <input type="text" id="first-name" name="first-name"
+                            placeholder="Escriba su nombre" pattern="[A-Z a-z]{3,15}"
+                            title="Escriba solo letras entre 3 y 15 caracteres" required>
+                    </li>
+                    <li>
+                        <label for="surname">Apellidos</label>
+                        <input type="text" id="surname" name="surname"
+                            placeholder="Escriba sus apellidos" pattern="[A-Z a-z]{4,40}"
+                            title="Escriba solo letras entre 4 y 40 caracteres" required>
+                    </li>
+                    <li>
+                        <label for="email">Correo Electronico</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="Escriba su correo Electronico" pattern="[A-Za-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,4}"
+                            title="Escriba su correo electronico" required>
+                    </li>
+                    <li>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono"
+                            placeholder="Escriba su telefono" pattern="[0-9]{9}"
+                            title="Escriba los 9 números de su telefono movil" required>
+                    </li>
+                    <li>
+                        <label for="mesage">Solicite más información</label>
+                        <textarea rows="6" id="mesage" placeholder="Escriba aquí su mensaje" required></textarea>
+                    </li>
+                    <li class="flexentero">
+                        <input type="checkbox" id="politica" name="politica" required>
+                        <label for="politica">Acepto la política de privacidad</label>
+                    </li>
+                    <li class="liButtons">
+                        <button type="reset">Borrar</button>
+                        <button type="submit">Enviar</button>
+                    </li>
+                </ul> 
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p class="redes">
+            Encuentranos en: 
+            <a href="http://www.instagram.com/osmelscake?igsh=YTkyaDEwNGI0Yjht" target="_blank"><img class="icono" src="../assets/images/instagram.png" alt="instagram"></a>
+            <a href="https://www.tiktok.com/@osmelespinozarami?_t=8qzBMiQWNRR&_r=1" target="_blank"><img class="icono" src="../assets/images/tiktok.png" alt="tiktok"></a>
+            <a href="https://www.facebook.com/share/mLUH5zJj4Tm3GxZz/" target="_blank"><img class="icono" src="../assets/images/facebook.png" alt="facebook"></a>
+        </p>
+        <p class="derechos">Copyright © 2024 Pasteleria Osmel's Cakes</p>
+    </footer> 
+</body>
+</html>    

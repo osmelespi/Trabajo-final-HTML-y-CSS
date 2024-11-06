@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    color: #333333;
+}
+
+@font-face {
+    font-family: "montecarlos";
+    src: url(../assets/fonts/MonteCarlo-Regular.ttf);
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+} 
+
+/************************************************* 
+Cabezera
+**************************************************/
+h1 {
+    font-family: "montecarlos";
+    font-size: 50px;
+}
+
+.membrete {
+    width: 100%;
+    height: 115px;
+    position: absolute;
+}
+
+header nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(249, 237, 222);
+    padding-inline: 80px;
+
+}
+
+header nav a img {
+    width: auto;
+    height: 135px;
+    position: relative;
+}
+
+header nav ul {
+    display: flex;
+    position: relative;
+} 
+
+header nav ul li {
+    margin: 0 30px;
+}  
+
+header nav ul li a {
+    transition: all 2s ease-in-out;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 700;
+    border: 0;
+} 
+
+header nav ul li a:hover {
+    color: #b28406;
+    transition: all 1s ease-in-out;
+    border-bottom: 5px solid #450e1b;
+} 
+
+.enlaceactivo {
+    color: #b28406;
+}
+
+.buscador {
+    position: relative;
+}
+
+.buscador input {
+    padding: 8px;
+    border: 1px solid rgb(110, 75, 30) ;
+    border-radius: 5px;
+}
+
+.boton {
+    padding: 7px 9px;
+    font-size: 15px;
+    background-color: #b28406;
+    border-radius: 5px;
+    color: bisque;
+}
+
+.boton:hover {
+    background-color: #715405 ;
+} 
+
+.boton:active {
+    background-color: #534006;
+}
+
+/************************************************* 
+Inicio
+**************************************************/
+.transicion {
+    width: 100%;
+    height: 600px;
+    position: relative;    
+}
+
+.transicion img {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    animation: slide 9s infinite;
+    opacity: 0;
+}
+
+@keyframes slide {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    33% { opacity: 1; }
+    43% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.foto1:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.foto2:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.foto3:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.transicion h1 {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    text-align: center;
+    text-shadow: 0 0 30px black;
+}
+
+.transicion h1 span {
+    color: bisque;
+    position: relative;
+}
+
+@keyframes animatebaja {
+    from {
+        top: -180px;
+        opacity: 0;
+    }
+    
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.animatebaja {
+    animation-name: animatebaja;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animatesube {
+    from {
+        bottom: -180px;
+        opacity: 0;
+    }
+    
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+.animatesube {
+    animation-name: animatesube;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out; 
+}
+
+.sobremi {
+    margin: auto;
+    width: 70%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    line-height: 2;
+}
+
+.sobremi h1, h2, h3 {
+    color: #530b1b;
+    text-decoration: underline;
+}
+
+.sobremi p {
+    font-size: 20px;
+}
+
+.ornamental {
+    width: 90px;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo2 {
+    padding: 80px 0px;
+    width: 400px;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    text-align: center; 
+}
+
+/************************************************* 
+Footer
+**************************************************/
+.online {
+    display: flex;
+    background-color: #b28406;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.online h4 {
+    color: #530b1b; 
+    width: 80%;
+    margin: auto;
+}
+
+.online img {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    text-align: center;
+}
+
+.redes {
+    color: #530b1b ;
+    font-size: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+
+.derechos {
+    background-color: #530b1b;
+    color: bisque;
+    font-size: 20px;
+    padding: 40px;
+}
+
+.icono {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 0 solid #b28406;
+    transition: all 0.5s;
+    border-radius: 50%;
+}
+
+.icono:hover {
+    background-color: #b28406;
+    border-width: 5px;
+}
+
+
+/************************************************* 
+Productos
+**************************************************/
+.caja h1 {
+    text-align: center;  
+}
+
+@keyframes animatederecha {
+    from {
+        margin-left: -380px;
+        opacity: 0;
+    }
+    
+    to {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+.animatederecha {
+    animation-name: animatederecha;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; 
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px;
+    column-gap: 40px;
+    row-gap: 50px;
+    justify-items: center;
+}
+
+.tarjeta {
+    width: 70%;
+    line-height: 30px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 380px;
+    border-radius: 30px;
+    transition: all 1s;
+}
+
+.tarjeta h4 {
+    font-size: 20px;
+    color: #530b1b;
+}
+
+.tarjeta span {
+    font-weight: bold;
+}
+
+.tarjetas img:hover {
+    width: 120%;
+    height: 400px;
+} 
+
+
+/************************************************* 
+Formulario
+**************************************************/
+@keyframes animateizquierda {
+    from {
+        margin-right: -380px;
+        opacity: 0;
+    }
+    
+    to {
+        margin-right: 0;
+        opacity: 1;
+    }
+}
+
+.animateizquierda {
+    animation-name: animateizquierda;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; 
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 5% 0;
+    border: 1px solid black;
+    background-color: rgb(249, 237, 222);
+}
+
+.flex-form {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex-form li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-form > li:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.flex-form li label {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+
+.flex-form > li > label {
+    flex: 1 0 120px;
+}
+
+.flex-form > li > label + * {
+    flex: 1 0 220px;
+}
+
+.flex-form li input, .flex-form li textarea {
+    padding: 15px;
+    border: none;
+}
+
+.flex-form .liButtons button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background-color: #b28406;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    border-radius: 6px;
+    font-weight: bold;
+    
+}
+
+.flex-form .liButtons button:hover {
+    background-color: #715405;
+    color: beige;
+}
+
+/************************************************* 
+Contacto
+**************************************************/
+.conocenos {
+    width: 50%;
+    margin: 30px auto;
+    line-height: 30px;
+    padding: 3% 0;
+    color: #530b1b;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.direccion {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+    padding: 30px 0;
+    border: 1px solid black;
+    background-color: rgb(249, 237, 222);  
+}
+
+.direccion iframe {
+    border: 2px solid #450e1b;
+}
+
+.contacto {
+    line-height: 30px;
+    padding: 3% 0;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto p, .contacto a {
+    color:#530b1b;
+}
+
+.contacto img {
+    width: 180px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
