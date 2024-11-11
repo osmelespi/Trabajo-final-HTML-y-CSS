@@ -30,6 +30,7 @@ h1 {
 
 .membrete {
     position: absolute;
+    width: 100%;
 }
 
 header nav {
@@ -41,7 +42,6 @@ header nav {
     height: 150px;
     background-color: rgb(249, 237, 222);
     padding-inline: 80px;
-
 }
 
 header nav a img {
@@ -318,6 +318,7 @@ Productos
 .tarjeta img {
     border-radius: 30px;
     transition: all 1s;
+    width: 100%;
 }
 
 .tarjeta h4 {
