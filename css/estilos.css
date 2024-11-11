@@ -29,8 +29,6 @@ h1 {
 }
 
 .membrete {
-    width: 100%;
-    height: 115px;
     position: absolute;
 }
 
@@ -47,8 +45,6 @@ header nav {
 }
 
 header nav a img {
-    width: auto;
-    height: 135px;
     position: relative;
 }
 
@@ -202,7 +198,7 @@ Inicio
     line-height: 2;
 }
 
-.sobremi h1, h2, h3 {
+.sobremi h2, h3, h4 {
     color: #530b1b;
     text-decoration: underline;
 }
@@ -212,7 +208,6 @@ Inicio
 }
 
 .ornamental {
-    width: 90px;
     margin: auto;
     display: grid;
     justify-content: center;
@@ -221,7 +216,6 @@ Inicio
 
 .logo2 {
     padding: 80px 0px;
-    width: 400px;
     margin: auto;
     display: grid;
     justify-content: center;
@@ -248,11 +242,6 @@ Footer
     margin: auto;
 }
 
-.online img {
-    width: 100px;
-    height: 100px;
-}
-
 footer {
     text-align: center;
 }
@@ -275,8 +264,6 @@ footer {
 }
 
 .icono {
-    width: 40px;
-    height: 40px;
     background-color: transparent;
     border: 0 solid #b28406;
     transition: all 0.5s;
@@ -329,8 +316,6 @@ Productos
 }
 
 .tarjeta img {
-    width: 100%;
-    height: 380px;
     border-radius: 30px;
     transition: all 1s;
 }
@@ -477,8 +462,6 @@ Contacto
 }
 
 .contacto img {
-    width: 180px;
-    height: auto;
     margin: auto;
     margin-top: 20px;
 }
